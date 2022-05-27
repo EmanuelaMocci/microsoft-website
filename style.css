@@ -1,0 +1,22 @@
+/* reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* /reset */
+
+/* typography */
+@font-face {
+  font-family: Windows;
+  src: url(Windows\ Regular.ttf);
+}
+/* /typography */
+
+/* common */
+body {
+  background-color: #008080;
+  font-family: "Windows";
+  color: white;
+}
+/* /common */
