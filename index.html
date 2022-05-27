@@ -4,37 +4,114 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+
+    <title>Windows</title>
   </head>
   <body>
     <main>
-      <div class="folder">
-        <img src="bin.png" alt="bin image" />
-        <div>Recycle Bin</div>
-      </div>
-      <div class="folder">
-        <img
-          src="internet.png"
-          alt="wolrd picture with an arrow on it, indicating the connection with internet"
-        />
-        <div>Connection to the Internet</div>
-      </div>
-      <div class="folder">
-        <img src="computer.png" alt="computer image" />
-        <div>My computer</div>
-      </div>
-      <div class="folder">
-        <img
-          src="neigbourhood.png"
-          alt="two computer images, indicatind the connection between more computer"
-        />
-        <div>Network Neighborhood</div>
-      </div>
-      <div class="folder">
-        <img src="briefcase.png" alt="Personal Case" />
-        <div>My Briefcase</div>
-      </div>
+      <section class="icons">
+        <div class="folder">
+          <img src="bin.png" alt="bin image" />
+          <div>Recycle Bin</div>
+        </div>
+        <div class="folder">
+          <img
+            src="internet.png"
+            alt="wolrd picture with an arrow on it, indicating the connection with internet"
+          />
+          <div>Connection to the Internet</div>
+        </div>
+        <div class="folder" id="computer-close">
+          <img src="computer.png" alt="computer image" />
+          <div>My computer</div>
+        </div>
+        <div class="folder">
+          <img
+            src="neigbourhood.png"
+            alt="two computer images, indicatind the connection between more computer"
+          />
+          <div>Network Neighborhood</div>
+        </div>
+        <div class="folder">
+          <img src="briefcase.png" alt="Personal Case" />
+          <div>My Briefcase</div>
+        </div>
+      </section>
+
+      <section class="open-folder">
+        <div class="computer-open" id="computer-open">
+          <div class="top-bar">
+            <div class="top-bar-title">
+              <img src="computer.png" alt="Computer image" />
+              <h3>My Computer</h3>
+            </div>
+
+            <div class="buttons">
+              <button id="reduce-folder"> <div class="reduce"></div></button>
+              <button id="expand-folder"><div class="maximize"></div></button>
+              <button id="close-folder"><i class="fas fa-times"></i></i></button>
+            </div>
+          </div>
+
+          <div class="index">
+              <ul>
+                  <li><span>F</span>ile</li>
+                  <li><span>E</span>dit</li>
+                  <li><span>V</span>iew</li>
+                  <li><span>H</span>elp</li>
+
+              </ul>
+          </div>
+
+          <div class="window">
+            <div class="folder">
+                <img src="floppy.png" alt="floppy drive image" />
+                <div>3½ Floppy (A:)</div>
+            </div>
+
+            <div class="folder">
+                <img src="cd.png" alt="cd image" />
+                <div>(D:)</div>
+            </div>
+
+            <div class="folder">
+                <img src="settings.png" alt="yellow folder with an hammer and screwdriver indicating the computer settings" />
+                <div>Control Panel</div>
+            </div>
+
+            <div class="folder">
+                <img src="networking.png" alt="two computer and a yellow phone indicating the networking" />
+                <div>Dial-UP <br/> Networking</div>
+            </div>
+
+            <div class="folder">
+                <img src="tasks.png" alt="two computer and a yellow phone indicating the networking" />
+                <div>Scheduled <br/> Tasks</div>
+            </div>
+          </div>
+
+          <div class="bottom-bar">
+            <div class="left">
+                5 object(s)
+            </div>
+            <div class="right">
+                <div class="triangle"></div>
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>

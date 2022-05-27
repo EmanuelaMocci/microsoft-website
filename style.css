@@ -26,6 +26,9 @@ body {
 
 /* main */
 main {
+  display: flex;
+}
+.icons {
   color: white;
   font-weight: 100;
   /* border: 1px solid black; */
@@ -45,6 +48,158 @@ main {
   padding-bottom: 5px;
 }
 
+/* open folders */
+.computer-open {
+  position: absolute;
+  left: 30%;
+  top: 5%;
+  width: 600px;
+  border: 3px solid #b6b6b6;
+  box-shadow: -1px -1px 0px 1px #e2e2e2, 0px 0px 0px 2px #152020,
+    -1.5px -1.5px 0.5px 1px #cecece;
+}
+
+/*  top bar */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #808080;
+  height: 25px;
+}
+.top-bar-title {
+  display: flex;
+}
+.top-bar-title img {
+  height: 20px;
+  padding-left: 3px;
+}
+.top-bar-title h3 {
+  color: #c7c6c6;
+  padding-left: 3px;
+}
+.buttons {
+  padding-right: 3px;
+  display: flex;
+}
+.buttons button {
+  width: 20px;
+  height: 20px;
+  background-color: #c0c0c0;
+  border-top-color: #e5e5e5;
+  border-left-color: #e5e5e5;
+}
+.buttons button:last-child {
+  margin-left: 2px;
+}
+.buttons button i {
+  padding: 0 3px;
+}
+.maximize {
+  width: 12px;
+  height: 12px;
+  border: 1.5px solid black;
+  border-top: 3px solid black;
+  margin-left: 1.5px;
+}
+.reduce {
+  width: 8px;
+  height: 12px;
+  border-bottom: 2.5px solid black;
+  margin-left: 4px;
+}
+/* /top bar */
+
+/* index */
+.index {
+  background-color: #c0c0c0;
+  padding: 5px 0 5px 8px;
+}
+.index ul {
+  display: flex;
+}
+.index ul li {
+  list-style: none;
+  padding-right: 15px;
+  font-size: 9px;
+}
+.index ul li span {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+/* /index */
+
+/* window */
+.window {
+  display: flex;
+  height: 300px;
+  background-color: #ffffff;
+  padding-top: 5px;
+  box-shadow: inset 2px 2px 0.8px 0px #444444,
+    inset -1.5px -1.5px 0px 0px #bcbcbc;
+  border-top: 1px solid #868686;
+  border-left: 1px solid #868686;
+  border-bottom: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+}
+/* /window */
+
+/* bottom bar */
+.bottom-bar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #c0c0c0;
+  padding-top: 1px;
+}
+.bottom-bar .left,
+.bottom-bar .right {
+  padding: 1px 4px;
+  box-shadow: inset 1.5px 1.5px 0px 0px #989898,
+    inset -1.5px -1.5px 0px 0px #efefef;
+  width: 40%;
+}
+.bottom-bar .right {
+  width: 59.5%;
+  position: relative;
+}
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 7.5px solid transparent;
+  border-right: 7.5px solid transparent;
+  border-top: 7.5px solid white;
+  position: absolute;
+  right: -4px;
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+.line1,
+.line2,
+.line3,
+.line4 {
+  border: 0.5px solid #aeaeae;
+  position: absolute;
+  transform: rotate(-45deg);
+}
+.line1 {
+  width: 13px;
+  bottom: 5px;
+  right: -1px;
+}
+.line2 {
+  width: 9px;
+  bottom: 3.5px;
+  right: -0.5px;
+}
+.line3 {
+  width: 5px;
+  bottom: 2px;
+  right: 0px;
+}
+/* /bottom bar */
+
+/* /open folders */
+
 /* /main */
 
 /* footer */
@@ -58,11 +213,10 @@ footer {
   box-shadow: 0px -2px 1px 0px #e6e6e6;
   height: 40px;
 }
-button {
+footer button {
   border-radius: 0;
   padding: 5px;
   font-family: "Windows";
-  height: 30px;
   cursor: pointer;
   font-size: 10px;
 }
@@ -71,6 +225,7 @@ button {
   border-top-color: #e6e6e6;
   border-top-width: 1.5px;
   border-left-color: #e6e6e6;
+  margin-left: 6px;
 }
 .time {
   border: none;
