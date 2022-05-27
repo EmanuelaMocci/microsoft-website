@@ -11,6 +11,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+   
     <link rel="stylesheet" href="style.css" />
 
     <title>Windows</title>
@@ -18,36 +19,36 @@
   <body>
     <main>
       <section class="icons">
-        <div class="folder">
+        <div class="folder" tabindex="1" id="bin-icon">
           <img src="bin.png" alt="bin image" />
           <div>Recycle Bin</div>
         </div>
-        <div class="folder">
+        <div class="folder" tabindex="1">
           <img
             src="internet.png"
             alt="wolrd picture with an arrow on it, indicating the connection with internet"
           />
           <div>Connection to the Internet</div>
         </div>
-        <div class="folder" id="computer-close">
+        <div class="folder" id="computer-icon" tabindex="1">
           <img src="computer.png" alt="computer image" />
           <div>My computer</div>
         </div>
-        <div class="folder">
+        <div class="folder" tabindex="1">
           <img
             src="neigbourhood.png"
             alt="two computer images, indicatind the connection between more computer"
           />
           <div>Network Neighborhood</div>
         </div>
-        <div class="folder">
+        <div class="folder" tabindex="1">
           <img src="briefcase.png" alt="Personal Case" />
           <div>My Briefcase</div>
         </div>
       </section>
 
       <section class="open-folder">
-        <div class="computer-open" id="computer-open">
+        <div class="computer-open draggable" id="computer-open">
           <div class="top-bar">
             <div class="top-bar-title">
               <img src="computer.png" alt="Computer image" />
@@ -71,28 +72,28 @@
               </ul>
           </div>
 
-          <div class="window">
-            <div class="folder">
+          <div class="window" id="window-expand">
+            <div class="folder" tabindex="1">
                 <img src="floppy.png" alt="floppy drive image" />
                 <div>3½ Floppy (A:)</div>
             </div>
 
-            <div class="folder">
+            <div class="folder" tabindex="1">
                 <img src="cd.png" alt="cd image" />
                 <div>(D:)</div>
             </div>
 
-            <div class="folder">
+            <div class="folder" tabindex="1">
                 <img src="settings.png" alt="yellow folder with an hammer and screwdriver indicating the computer settings" />
                 <div>Control Panel</div>
             </div>
 
-            <div class="folder">
+            <div class="folder" tabindex="1">
                 <img src="networking.png" alt="two computer and a yellow phone indicating the networking" />
                 <div>Dial-UP <br/> Networking</div>
             </div>
 
-            <div class="folder">
+            <div class="folder" tabindex="1">
                 <img src="tasks.png" alt="two computer and a yellow phone indicating the networking" />
                 <div>Scheduled <br/> Tasks</div>
             </div>
@@ -111,6 +112,38 @@
             </div>
           </div>
         </div>
+
+        <!-- bin -->
+        <div class="bin-open draggable" id="bin-open-folder">
+            <div class="top-bar">
+              <div class="top-bar-title">
+                <img src="bin.png" alt="bin image" />
+                <h3>Bin</h3>
+              </div>
+  
+              <div class="buttons">
+                <button id="reduce-bin-folder"> <div class="reduce"></div></button>
+                <button id="expand-bin-folder"><div class="maximize"></div></button>
+                <button id="close-bin-folder"><i class="fas fa-times"></i></i></button>
+              </div>
+            </div>
+  
+            <div class="window window-bin"></div>
+  
+            <div class="bottom-bar">
+              <div class="left">
+                  0 object
+              </div>
+              <div class="right">
+                  <div class="triangle"></div>
+                  <div class="line1"></div>
+                  <div class="line2"></div>
+                  <div class="line3"></div>
+  
+              </div>
+            </div>
+          </div>
+          <!-- bin -->
       </section>
     </main>
 
@@ -120,6 +153,8 @@
       </button>
       <button class="time">10:00 AM</button>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

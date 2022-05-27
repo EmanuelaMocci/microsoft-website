@@ -21,6 +21,10 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+}
+button {
+  cursor: pointer;
 }
 /* /common */
 
@@ -42,21 +46,44 @@ main {
   width: 100px;
   text-align: center;
   margin-bottom: 30px;
+  cursor: pointer;
 }
 .folder img {
   width: 40px;
   padding-bottom: 5px;
 }
+.folder div {
+  padding: 0 2px;
+}
 
 /* open folders */
-.computer-open {
+.computer-open,
+.bin-open {
+  display: none;
+}
+
+.computer-open,
+.bin-open {
   position: absolute;
-  left: 30%;
-  top: 5%;
   width: 600px;
   border: 3px solid #b6b6b6;
   box-shadow: -1px -1px 0px 1px #e2e2e2, 0px 0px 0px 2px #152020,
     -1.5px -1.5px 0.5px 1px #cecece;
+}
+.computer-open {
+  left: 30%;
+  top: 5%;
+}
+.bin-open {
+  left: 10%;
+  top: 30%;
+}
+
+.folder:focus div {
+  background-color: #050283;
+}
+.window .folder:focus div {
+  color: white;
 }
 
 /*  top bar */
@@ -141,6 +168,9 @@ main {
   border-left: 1px solid #868686;
   border-bottom: 1px solid #e0e0e0;
   border-right: 1px solid #e0e0e0;
+}
+.window-bin {
+  width: 594px;
 }
 /* /window */
 
