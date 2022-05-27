@@ -28,15 +28,21 @@ body {
 main {
   color: white;
   font-weight: 100;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin-top: 30px;
+  margin-left: 10px;
 }
-.bin {
+.folder {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid black;
-  width: 80px;
+  width: 100px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.folder img {
+  width: 40px;
+  padding-bottom: 5px;
 }
 
 /* /main */
