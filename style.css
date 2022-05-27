@@ -9,7 +9,7 @@
 /* typography */
 @font-face {
   font-family: Windows;
-  src: url(Windows\ Regular.ttf);
+  src: url(px_sans_nouveaux.ttf);
 }
 /* /typography */
 
@@ -17,6 +17,61 @@
 body {
   background-color: #008080;
   font-family: "Windows";
-  color: white;
+  font-size: 8px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 /* /common */
+
+/* main */
+main {
+  color: white;
+  font-weight: 100;
+  border: 1px solid black;
+  margin-top: 30px;
+}
+.bin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  width: 80px;
+}
+
+/* /main */
+
+/* footer */
+footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 100%;
+  background-color: #b5b5b5;
+  box-shadow: 0px -2px 1px 0px #e6e6e6;
+  height: 40px;
+}
+button {
+  border-radius: 0;
+  padding: 5px;
+  font-family: "Windows";
+  height: 30px;
+  cursor: pointer;
+  font-size: 10px;
+}
+.start {
+  background-color: #b5b5b5;
+  border-top-color: #e6e6e6;
+  border-top-width: 1.5px;
+  border-left-color: #e6e6e6;
+}
+.time {
+  border: none;
+  margin-right: 6px;
+  padding: 5px 15px;
+  background-color: #b5b5b5;
+  box-shadow: 1.5px 0px 0.5px 0px #e6e6e6, 1px 1px 1px 0px #d0d0d0,
+    inset 1.5px 1.5px 0.5px 0px #807f7f, 3px 0px 5px 0px #e6e6e6;
+}
+/* /footer */
